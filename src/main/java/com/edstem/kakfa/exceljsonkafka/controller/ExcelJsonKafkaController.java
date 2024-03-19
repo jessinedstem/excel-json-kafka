@@ -22,6 +22,6 @@ public class ExcelJsonKafkaController {
 
     @PostMapping("/convert")
     public String uploadExcelAndConvertToJson(@RequestParam("file") MultipartFile file) throws IOException {
-        return excelJsonKafkaProducerService.getJsonFromExcel(file);     }
-
+        return excelJsonKafkaProducerService.getJsonFromExcel(file);
+    }
 }
